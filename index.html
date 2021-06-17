@@ -40,27 +40,27 @@
                     <label for="txtId">Ingresa el número del SuperHero a buscar</label><br>
                     <input class="" type="text" name="txtId" id="txtId"><br>
                     <span class="errorNombre"></span><br>
-                    <button class="btn btn-primary buscar my-2" id="buscar">Buscar</button>
+                    <button class="btn btn-primary buscar" id="buscar">Buscar</button>
                 </div>
             </div>
         </div>
-        <div class="resultado">
+        <div class="resultado my-3">
             <div class="row">
                 <div class="col-6">
                     <!-- <h2 class="resultado_hero">SuperHero Encontrado</h2> -->
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                           <div class="col-md-4">
-                            <img src="" alt="">
+                            <img src="" id="hero_thumb" alt="">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Nombre:</h5>
+                              <h5 class="card-title" id="nombre_hero"></h5>
                               <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Conexiones: asd<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></li>
-                                <li class="list-group-item">Ocupación: </li>
-                                <li class="list-group-item">Primera Aparición: </li>
-                                <li class="list-group-item">Altura: </li>
+                                <li class="list-group-item conections_hero"><p class="card-text"><small class="text-muted published_by"></small></p></li>
+                                <li class="list-group-item occ_hero"></li>
+                                <li class="list-group-item first_appearance"></li>
+                                <li class="list-group-item altura"> </li>
                                 <li class="list-group-item">Peso: </li>
                                 <li class="list-group-item">Alianzas: </li>
                               </ul>
@@ -78,8 +78,8 @@
             </div>
         </div>
 
-        <h1>CARD HERO</h1>
-
+<!--         <h1 class="nombre_hero">CARD HERO</h1>
+ -->
     
 
     <script src="assets/js/script.js"></script>
