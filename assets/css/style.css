@@ -1,0 +1,17 @@
+.principal {
+    text-align: center;
+}
+
+.imagen_principal{
+    background-image: url("../img/sh1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.resultado_hero {
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHeroes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+
+
+        <!-- Image and text -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+            <img src="assets/img/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+            SuperHero
+            </a>
+        </nav>
+        <div class="principal">
+            <div class="row">
+                <div class="col imagen_principal"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Encuentra tu SuperHero</h2>
+                    <label for="txtId">Ingresa el número del SuperHero a buscar</label><br>
+                    <input class="" type="text" name="txtId" id="txtId"><br>
+                    <span class="errorNombre"></span><br>
+                    <button class="btn btn-primary buscar my-2" id="buscar">Buscar</button>
+                </div>
+            </div>
+        </div>
+        <div class="resultado">
+            <div class="row">
+                <div class="col-6">
+                    <!-- <h2 class="resultado_hero">SuperHero Encontrado</h2> -->
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="" alt="">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Nombre:</h5>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Conexiones: asd<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></li>
+                                <li class="list-group-item">Ocupación: </li>
+                                <li class="list-group-item">Primera Aparición: </li>
+                                <li class="list-group-item">Altura: </li>
+                                <li class="list-group-item">Peso: </li>
+                                <li class="list-group-item">Alianzas: </li>
+                              </ul>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div id="chartContainer" style="height: 370px; width: 100%; margin-top: 100px;"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
