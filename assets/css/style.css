@@ -15,3 +15,15 @@
 .resultado_hero {
     text-align: center;
 }
+
+#resultado {
+    /* display: none; */
+}
+
+#nombre_hero {
+    text-align: center;
+}
+
+#hero_thumb {
+    width: 100%;
+}
