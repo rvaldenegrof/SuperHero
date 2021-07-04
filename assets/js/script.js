@@ -52,6 +52,14 @@ const getHeroData = (idHero) => {
                 dataPoints.push({ y: parseInt(stats[keys])||0, label:keys})
             }
             renderChart(dataPoints, nombre); 
+        },
+        error: function(response){
+            if ( response.error == 'invalid id' || response.response == 'error') {
+                console.log('404.');
+
+                console.log(jqXHR);
+                document.getElementById('#resultHero').innerHTML = "SuperHero no encontrado";
+            }
         }
     });
 }
